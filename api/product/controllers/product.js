@@ -5,11 +5,4 @@
  * to customize this controller
  */
 
-module.exports = {
-  async find(ctx) {
-    console.log("i123");
-    const products = await strapi.services.product.find(ctx.query);
-
-    return products.map((product) => product.title);
-  },
-};
+module.exports = {};
